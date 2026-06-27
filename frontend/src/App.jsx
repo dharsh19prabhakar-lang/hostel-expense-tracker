@@ -4133,7 +4133,7 @@ const categoryDisplay = {
 
 // ─── Shared input sx ─────────────────────────────────────────────────────────
 const inputSx = {
-  width: '100%',
+  width: {xs: '285px', md: "200px"},
   background: '#ffffff1f',
   borderRadius: '10px',
   '& .MuiOutlinedInput-root': {
@@ -4691,6 +4691,7 @@ export default function App() {
                               <MenuItem value="transport">Transport 🚌</MenuItem>
                               <MenuItem value="accommodation">Accommodation 🏠</MenuItem>
                               <MenuItem value="entertainment">Entertainment 🎬</MenuItem>
+                              <MenuItem value="others">Others</MenuItem>
                             </Select>
                           </FormControl>
                         </Grid>
