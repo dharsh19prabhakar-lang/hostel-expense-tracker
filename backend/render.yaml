@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: hostel-expense-backend
+    runtime: node
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: DB_USER
+        value: sa
+      - key: DB_PASSWORD
+        value: 123456
+      - key: DB_SERVER
+        value: localhost
+      - key: DB_DATABASE
+        value: HostelExpenses
+      - key: PORT
+        value: 5000
